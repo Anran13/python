@@ -5,10 +5,10 @@ import cv2
 # image source: https://pixabay.com/vectors/astronaut-night-sky-star-7059915/
 
 #=================================================================================
-img = cv2.imread('C:/Users/ROG/Downloads/astronaut_pixabay.png')
+img = cv2.imread('C:/Users/Downloads/astronaut_pixabay.png')
 #=================================================================================
 # image property
-img = cv2.imread("C:/Users/ROG/Downloads/astronaut_pixabay.png")   
+img = cv2.imread("C:/Users/Downloads/astronaut_pixabay.png")   
 print("image property")
 print(f"shape = {img.shape}")
 print(f"size  = {img.size}")
@@ -18,8 +18,8 @@ print(f"BGR = {img[100,100,0]}, {img[100,100,1]}, {img[100,100,2]}")
 
 #================================================
 # change to grey scale
-img = cv2.imread('C:/Users/ROG/Downloads/astronaut_pixabay.png', cv2.IMREAD_GRAYSCALE)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_grey.png", img)
+img = cv2.imread('C:/Users/Downloads/astronaut_pixabay.png', cv2.IMREAD_GRAYSCALE)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_grey.png", img)
 cv2.imshow('grey', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
