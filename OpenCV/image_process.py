@@ -100,7 +100,7 @@ cv2.rectangle(img, (0,0), (400, 200), (255,0,0), cv2.FILLED)
 cv2.line(img, (0,0), (img.shape[1], img.shape[0]), (255,0,0), 5)
 cv2.circle(img, (300, 400), 30, (255,0,0), cv2.FILLED)
 cv2.putText(img, 'Hello', (100, 500), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
-cv2.imwrite("C:/Users/ROG/Downloads/hello.png", img)
+cv2.imwrite("C:/Users/Downloads/hello.png", img)
 cv2.imshow('img', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
@@ -108,7 +108,7 @@ cv2.destroyAllWindows()
 #================================================
 cv2.imshow("BGR Color Space", img)
 img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)  # BGR轉HSV
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv.png", img_hsv)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv.png", img_hsv)
 cv2.imshow("HSV Color Space", img_hsv)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
@@ -142,15 +142,15 @@ cv2.imshow('Marked Image', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_mark.png", img)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_mark.png", img)
 
 #================================================
 # spit into blue, green, red
 cv2.imshow('bgr', img)
 blue, green, red = cv2.split(img)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_split_blue.png", blue)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_split_green.png", green)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_split_red.png", red)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_split_blue.png", blue)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_split_green.png", green)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_split_red.png", red)
 # cv2.imshow('blue', blue)
 # cv2.imshow('green', green)
 # cv2.imshow('red', red)
@@ -168,13 +168,13 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 #================================================
-hsv_image = img = cv2.imread('C:/Users/ROG/Downloads/astronaut_pixabay_hsv.png')
+hsv_image = img = cv2.imread('C:/Users/Downloads/astronaut_pixabay_hsv.png')
 hue, saturation, value = cv2.split(hsv_image)
 
 cv2.imshow("The HSV Image", hsv_image)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv_hue.png", hue)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv_sat.png", saturation)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv_val.png", value)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv_hue.png", hue)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv_sat.png", saturation)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv_val.png", value)
 
 cv2.imshow('hsv', hue)
 cv2.imshow('saturation', saturation)
@@ -192,13 +192,13 @@ cv2.imshow("The Merge Image - sat = 200", hsv_image)
 new_image = cv2.cvtColor(hsv_image, cv2.COLOR_HSV2BGR) # HSV 轉 BGR
 cv2.imshow("The New Image", new_image)
 
-# cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv_hue_200_merge.png", hsv_image)
-# cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv_sat_255_merge.png", hsv_image)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv_val_255_merge.png", hsv_image)
+# cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv_hue_200_merge.png", hsv_image)
+# cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv_sat_255_merge.png", hsv_image)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv_val_255_merge.png", hsv_image)
 
-# cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv_hue_200_rgb.png", new_image)
-# cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv_sat_255_rgb.png", new_image)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_hsv_val_255_rgb.png", new_image)
+# cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv_hue_200_rgb.png", new_image)
+# cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv_sat_255_rgb.png", new_image)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_hsv_val_255_rgb.png", new_image)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
@@ -208,7 +208,7 @@ img = cv2.resize(img, (0,0), fx=0.4, fy=0.4)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 blur = cv2.GaussianBlur(img, (15,15), 10)
 canny = cv2.Canny(img, 100, 130)
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_canny.png", canny)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_canny.png", canny)
 
 kernel1 = np.ones((100,100), np.uint8)
 dilate = cv2.dilate(canny, kernel1, iterations=5)
@@ -291,7 +291,7 @@ for cnt in contours:
         elif corners >= 6:
             cv2.putText(imgContour, 'circle', (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
-cv2.imwrite("C:/Users/ROG/Downloads/astronaut_pixabay_contour.png", imgContour)
+cv2.imwrite("C:/Users/Downloads/astronaut_pixabay_contour.png", imgContour)
 
 cv2.imshow('img', img)
 cv2.waitKey(0)
