@@ -1,4 +1,4 @@
-def caculate_bmi(height:int,weight:int)->float:
+def calculate_bmi(height:int,weight:int)->float:
     return weight / (height / 100) ** 2
 
 def get_state(bmi:float)->str:
@@ -15,4 +15,6 @@ def get_state(bmi:float)->str:
     else:
         return "重度肥胖"
 
+# def test()->None:
+#     return print("test")
 
