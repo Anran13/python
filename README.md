@@ -44,39 +44,88 @@
         * Once **README.md** file is changed,  the **exclamation mark** in **Source Control** will show up!
         * Click **Changes** --> right click and choose **Stage All Changes** --> enter modified index in **Message box** --> click **Commit** --> click **Sync...**
 
-* Install packages **python** and **jupyter** under the "python" container in **VSCode**.
-   * construct **.ipynb** file for testing and markdown
-      * choose the **kernel** environment [image](https://github.com/Anran13/postgres_learning/blob/main/image/ipynb_env.png)
-   * construct **.py** file for project [image](https://github.com/Anran13/postgres_learning/blob/main/image/py_env.png)
-      * choose the python environment
-        1. leave the current virtual environment
-            ```
-            conda deactivate
-            ```
-        2. cancel the auto base environment
-           ```
-           conda config --set auto_activate_base false
-           ```
-        3. initialize conda
-           ```
-           conda init --all bash
-           ```
-        4. close the current terminal and open a new one
-        5. execute the python in terminal
-           ```
-           python learn/python_250720.py
-           ```
-      * or we can follow the following steps:
-        1. check the virtual environment
-           ```
-           conda env list
-           ```
-        2. activate the virtual environment
-           ```
-           conda activate pydev
-           ```
+   * Install packages **python** and **jupyter** under the "python" container in **VSCode**.
+      * construct **.ipynb** file for testing and markdown
+         * choose the **kernel** environment [image](https://github.com/Anran13/postgres_learning/blob/main/image/ipynb_env.png)
 
-* Install package **Gemini Code Assist** (for free)
+            -- install junpyter kernel when the first execution is done
+
+      * construct **.py** file for project [image](https://github.com/Anran13/postgres_learning/blob/main/image/py_env.png)
+         * choose the python environment
+           1. leave the current virtual environment
+               ```
+               conda deactivate
+               ```
+           2. cancel the auto base environment
+              ```
+              conda config --set auto_activate_base false
+              ```
+           3. initialize conda
+              ```
+              conda init --all bash
+              ```
+           4. close the current terminal and open a new one
+           5. execute the python in terminal
+              ```
+              python learn/python_250720.py
+              ```
+         * or we can follow the following steps:
+           1. check the virtual environment
+              ```
+              conda env list
+              ```
+           2. activate the virtual environment
+              ```
+              conda activate pydev
+              ```
+
+   * Install package **Gemini Code Assist** (for free)
+
+
+## **Preprocessing 1 (another way)** 
+* Visual Studio Code (VSCode)
+    * Install VSCode (can be download from https://code.visualstudio.com/)
+
+    * Install git [download](https://git-scm.com/downloads/win)
+      -- find **git bash** --> install succesfully!
+      -- in VSCode termimal
+        ```js
+        git config --global user.name "____"
+        git config --global user.email "__@__.com"
+        git config --global pull.rebase false
+        git config --list
+        ```
+        note: enter "q" to leave
+    
+    * Create a virtual environment (install **miniconda** [download](https://www.anaconda.com/download/success))
+       1. re-open VSCode:
+          ```
+          conda --version 
+          ```
+       2. (setting for the first time)
+          ```
+          conda config --set auto_activate_base false
+          conda init --all bash
+          ```
+       3. create new env
+          ```
+          conda env list
+          conda create --name python-env python=3.10
+          ```
+       4. activate (enter the virtual env)
+          ```
+          conda activate python-env
+          ```
+       5. deactive (leave the virtual env)
+          ```
+          conda deactivate
+          ```
+       6. remove env
+          ```
+          conda env remove --name python-env
+          ```
+
+    * Install packages **python** and **jupyter**
 
 
 ## Deep Learning and Image Recognition
