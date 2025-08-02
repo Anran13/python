@@ -124,6 +124,11 @@
           ```
           conda env remove --name python-env
           ```
+      
+      * Install packages (in the root file path of the virtual environment):
+        - [x] install packages -> enter "pip install -r requirements.txt"
+        - [x] check packages -> "pip list" or "conda list"
+        - [x] if some package exist, ex. numpy -> "conda list numpy"
 
     * Install packages **python** and **jupyter**
 
