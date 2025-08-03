@@ -7,3 +7,4 @@ scipy
 streamlit
 qrcode
 opencv-contrib-python
+yfinance
