@@ -8,3 +8,8 @@ streamlit
 qrcode
 opencv-contrib-python
 yfinance
+paho-mqtt
+pafy
+mediapipe
+tensorflow
+msvc-runtime
