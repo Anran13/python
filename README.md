@@ -1,6 +1,5 @@
 # **Preprocessing**
 
-## **Preprocessing 1** 
 * Construct a container:
     * Install the **docker** (can download from  https://docs.docker.com/)
        * We might encounter some problems due to **Windows Subsystem for Linux**. The solution can follow the images:
@@ -82,7 +81,7 @@
    * Install package **Gemini Code Assist** (for free)
 
 
-## **Preprocessing 1 (another way)** 
+# **Preprocessing (another way)** 
 * Visual Studio Code (VSCode)
     * Install VSCode (can be download from https://code.visualstudio.com/)
 
@@ -133,7 +132,8 @@
     * Install packages **python** and **jupyter**
 
 
-## Deep Learning and Image Recognition
+# **Deep Learning and Image Recognition**
+## MQTT
   1. Using ESP32-CAM ([Ref1](https://youyouyou.pixnet.net/blog/post/119383183#google_vignette), [Ref2](https://www.nmking.io/index.php/2022/11/03/422/))
   2. Install **Arduino IDE** ([download](https://www.arduino.cc/en/software/#ide))
   3. Open **Arduino IDE** --> choose **file/preferences** --> in **addition boards manager URL** enter 
@@ -147,6 +147,15 @@
 
   * [Reference](https://steam.oxxostudio.tw/category/python/index.html)
 
-# Image source 
+## OpenCV
+   1. Require packages **opencv-contrib-python** or **opencv-python**
+   2. Note that we can only install either **opencv-contrib-python** or **opencv-python**. (Cannot install both at the same time)
+
+## Yolo
+   1. Darknet can be found in [here](https://github.com/AlexeyAB/darknet/releases).
+   2. Objects (**.names**), configuration (**.cfg**) and weight (**.weights**) files have to be loaded before detection.
+   3. Note that the size of weight (**.weights**) file is too large; thus only **tiny** version isuploaded.
+
+## Image source 
    * [soruces1](https://pixabay.com/users/andsproject-26081561/)
    
